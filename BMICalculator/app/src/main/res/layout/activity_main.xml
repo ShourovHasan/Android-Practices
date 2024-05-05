@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="#f00"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনার ওজন কত? (KG)"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/edWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="কত কেজি?"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনার উচ্চতা কত?"
+        android:textSize="30sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/edHeightFeet"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="5"
+            android:hint="কত ফুট?"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            />
+        <EditText
+            android:id="@+id/edHeightInch"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="5"
+            android:hint="কত ইঞ্চি?"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnBMICalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI হিসাব করুন"
+        />
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result here"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+
+</LinearLayout>

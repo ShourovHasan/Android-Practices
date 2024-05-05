@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/myLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find Even Numbers"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="#ff0000"
+                android:layout_marginBottom="20sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="কত সাল থেকে"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/inputStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="কত সাল থেকে"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="কত সাল পর্যন্ত"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/inputEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="কত সাল পর্যন্ত"
+                />
+            <Button
+                android:id="@+id/evenBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show All Even Numbers"
+                />
+
+
+            <TextView
+                android:id="@+id/evenDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Even Numbers are shown below:"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ff0000"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
